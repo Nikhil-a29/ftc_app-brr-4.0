@@ -94,7 +94,6 @@ public class TileRunnerTeleOp extends LinearOpMode {
         double maxDrivePower;
 
         double forward; //positive is forward
-        double strafe; //positive is right
         double rotate; //positive is clockwise
 
         double intakeMotorPower = 1;
@@ -120,7 +119,6 @@ public class TileRunnerTeleOp extends LinearOpMode {
 
             //ITERATIVE CODE
             forward = gamepad1.left_stick_y;
-            //strafe = gamepad1.right_stick_x;
             rotate = gamepad1.left_stick_x;
 
             frDrivePower = forward + rotate;
